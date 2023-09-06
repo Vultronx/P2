@@ -447,9 +447,38 @@ fill: white; */
 }
 
 /****** Footer ***********/
+
+.footer-section {
+}
+
 .footer {
+    /* size */
+    width: 100%;
+
+    /* color */
+    background-color: #78f017;
+
+    /* display */
     display:flex;
-    align-content: space-between;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer .footer-element {
+    display:flex;
+    align-content: baseline;
+    flex-direction: column;
+
+    padding: 8px 0px 8px 0px;
+}
+
+.footer .footer-element h1 {
+    margin: 8px 0px 8px 0px;
+}
+
+.footer .footer-element p {
+    margin: 8px 0px 8px 0px;
 }
 
 
