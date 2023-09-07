@@ -402,6 +402,7 @@ fill: white; */
 .activites-cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .activites-cards .card-content {
@@ -462,7 +463,6 @@ fill: white; */
     width: 20%;
     display:flex;
     flex-direction: column;
-
     padding: 8px 0px 8px 0px;
 }
 
