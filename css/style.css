@@ -755,13 +755,18 @@ fill: white; */
 
     .search-button {
         width: 50px;
-        margin-left: 230px;
+        min-width: 50px;
+        margin-left: -30px;
         border-radius: 15px 15px 15px 15px;
-        position: absolute;
+        position:relative;
+    }
+
+    .search-bar .input-width {
+        width: 100%;
     }
 
     .search-bar .search-input {
-        width: 87%;
+        width: 100%;
         margin-right: 0px;
         border-radius: 0px 15px 15px 0px;
     }
