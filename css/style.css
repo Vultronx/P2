@@ -787,24 +787,37 @@ fill: white; */
         padding-bottom: 0px;
     }
 
+    .filter-padding {
+        padding-right: 0px;;
+    }
+
     .filter-bar .filter-title {
         width: 100%;
+        margin-right: 0px;
     }
 
     .filter-bar .filter-buttons {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .filter-bar .filter-button {
-        min-width: 37%;
-        max-width: 45px;
+        width: 39%;
+        margin-left: 0px;
         margin-right: 0px;
-        margin-bottom: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 12px;
+        padding-right: 10px;
         font-size: 14px;
+    }
+
+    .filter-bar i {
+        padding-top: 2px;
+    }
+
+    .filter-button-txt {
+        width: 110px;
     }
 
     .search-information {
@@ -856,7 +869,7 @@ fill: white; */
     }
 
     .populaires-cards .card {
-        width: 90%;
+        width: auto;
         height: 130px;
         margin-top: 15px;
     }
