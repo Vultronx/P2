@@ -749,6 +749,7 @@ fill: white; */
     }
 
     .search-bar {
+        min-width: 280px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -772,7 +773,7 @@ fill: white; */
     }
 
     .search-button-icon {
-        width: 24px;
+        width: 20px;
         display: flex;
         justify-content: center;
         visibility: visible;
@@ -803,13 +804,15 @@ fill: white; */
 
     .filter-bar .filter-buttons {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        padding-right: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        row-gap: 18px;
     }
 
     .filter-bar .filter-button {
-        width: 39%;
+        width: 100%;
         margin-left: 0px;
         margin-right: 0px;
         padding-left: 12px;
@@ -822,7 +825,7 @@ fill: white; */
     }
 
     .filter-button-txt {
-        width: 110px;
+        width: 90px;
     }
 
     .search-information {
