@@ -30,7 +30,6 @@ body {
 }
 
 header {
-    /* background-color: green; */
     padding: 0px 0px 25px 0px;
 }
 
@@ -65,6 +64,8 @@ header img {
     flex: 20 1 auto;
 }
 
+/****** Menu **********/
+
 .menu a {
     height: 48px;
     display:flex;
@@ -85,6 +86,8 @@ header img {
     border-top: 2px solid #0065FC;
     border-bottom: 2px solid #ffffff;
 }
+
+/****** Barre de recherche **********/
 
 .search-header {
     padding-bottom: 20px;
@@ -170,13 +173,7 @@ header img {
     visibility: visible;
 }
 
-.button-switch {
-    visibility: hidden;
-}
-
-/* display: flex;
-align-items: center;
-fill: white; */
+/****** Barre de filtres **********/
 
 .filter-bar {
     font-size: 17px;
@@ -345,8 +342,8 @@ fill: white; */
     width: auto;
     height: 80px;
     padding-top: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .hebergements-cards .card-txt h1 {
@@ -505,17 +502,12 @@ fill: white; */
 }
 
 /****** Footer ***********/
-
 .footer-section {
     background-color: var(--main-bg-color);
 }
 
 .footer {
-    /* size */
     width: 83%;
-    /* color */
-
-    /* display */
     display:flex;
     justify-content: space-between;
     padding-left: 20px;
@@ -539,9 +531,6 @@ fill: white; */
     margin: 8px 0px 8px 0px;
     font-size: 14px;
 }
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -692,7 +681,7 @@ fill: white; */
     }
 
     header {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     nav {   
@@ -754,6 +743,10 @@ fill: white; */
         padding-right: 20px;
     }
 
+    .search-icon {
+        min-width: 50px;
+    }
+
     .search-button {
         width: 50px;
         min-width: 50px;
@@ -805,14 +798,14 @@ fill: white; */
     .filter-bar .filter-buttons {
         width: 100%;
         display: grid;
-        padding-right: 20px;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        grid-auto-rows: auto;
+        gap: 12px;
         row-gap: 18px;
     }
 
     .filter-bar .filter-button {
-        width: 100%;
+        width: auto;
         margin-left: 0px;
         margin-right: 0px;
         padding-left: 12px;
@@ -822,6 +815,11 @@ fill: white; */
 
     .filter-bar i {
         padding-top: 2px;
+    }
+
+    .filter-button i {
+        width: 16px;
+        padding-right: 8px;
     }
 
     .filter-button-txt {
@@ -919,18 +917,8 @@ fill: white; */
     }
 
     .footer {
-        /* size */
         width: 100%;
-        /* color */
-    
-        /* display */
         padding-left: 0px;
         padding-right: 0px;
-    }
-}
-
-@media (0px <= width < 320px) {
-    body {
-        background-color: red;
     }
 }
